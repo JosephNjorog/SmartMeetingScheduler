@@ -1,0 +1,73 @@
+/* Basic CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f8fc;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Main container styles */
+  #root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Navigation bar styles */
+  .navbar {
+    width: 100%;
+    background-color: #0044cc;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  /* Calendar styles */
+  .calendar {
+    width: 80%;
+    max-width: 800px;
+    margin: 2rem auto;
+  }
+  
+  /* Meeting form styles */
+  .meeting-form {
+    width: 80%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Meeting list styles */
+  .meeting-list {
+    width: 80%;
+    max-width: 800px;
+    margin: 2rem auto;
+  }
+  
+  .meeting-item {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .notification {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background-color: #ffcc00;
+    color: #333;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
