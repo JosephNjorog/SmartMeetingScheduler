@@ -47,5 +47,5 @@ Fork this repository and create a Pull request with a detailed description of th
 
 # LICENSE
 This project falls under the MIT license you can use this software as you like without the consent of the owner
-Any harm occuring from the use of this software i will not be liable
+Any harm occuring from the use of this software i will not be liability
 
