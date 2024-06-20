@@ -96,41 +96,52 @@ frontend/
   - **useMeetings.js**: Custom hook for meeting-related logic.
   - **... (other custom hooks)**: Additional hooks as needed.
 
-- **pages/**: Contains page components representing different views in the application.
-  - **HomePage.jsx**: The homepage component.
-  - **LoginPage.jsx**: The login page component.
-  - **SignupPage.jsx**: The signup page component.
-  - **DashboardPage.jsx**: The dashboard page component where users can manage their meetings.
-  - **... (other page components)**: Additional pages as needed.
+-pages/:
 
-- **services/**: Contains service files for API calls and business logic.
-  - **ApiService.js**: Service for making API requests to the backend.
-  - **AuthService.js**: Service for authentication-related API requests.
-  - **... (other service files)**: Additional service files as needed.
+Dashboard.jsx: The main dashboard page where users can view and manage meetings.
+Login.jsx: Login page for user authentication.
+Register.jsx: Registration page for new users to sign up.
+services/:
 
-- **utils/**: Contains utility functions.
-  - **dateUtils.js**: Utility functions for date formatting and manipulation.
-  - **validationUtils.js**: Utility functions for form validation.
-  - **... (other utility files)**: Additional utility files as needed.
+ApiService.js: Handles API requests to the backend (GET, POST, PUT, DELETE operations).
+AuthService.js: Handles authentication logic (login, logout, register).
+NotificationService.js: Handles sending notifications to users.
+utils/:
 
-- **App.jsx**: The main App component where routing and state management starts.
-- **index.jsx**: The entry point of the React application.
-- **routes.jsx**: Defines the routes for the application, mapping URLs to components.
+dateUtils.js: Utility functions for handling date and time operations.
+validationUtils.js: Utility functions for form validation.
+config.js: Contains configuration values and constants.
+App.jsx: The main component that sets up the application structure, including routing.
 
-#### Root Directory
-- **.gitignore**: Specifies files and directories ignored by Git (e.g., node_modules, .env).
-- **package.json**: Specifies dependencies and scripts for setting up and running the frontend application.
-- **README.md**: Documentation providing instructions for setting up and running the frontend, along with any other relevant details.
+index.jsx: The entry point of the React application, where the ReactDOM.render method mounts the App component.
 
-### Suggested Improvements
-- **State Management**: Use a state management library like Redux or Context API with hooks to manage global state efficiently.
-- **Testing**: Implement unit tests using Jest and React Testing Library to ensure code quality and functionality.
-- **Responsive Design**: Ensure the application is responsive using CSS frameworks like Bootstrap or Tailwind CSS.
-- **Localization**: Provide multi-language support using libraries like react-i18next.
-- **Error Handling**: Implement global error handling for API requests to improve user experience.
-- **Accessibility**: Ensure the application is accessible to all users by following ARIA guidelines.
+routes.jsx: Defines the routes for the application using React Router.
 
+store/:
 
+actions/:
+meetingActions.js: Actions for managing meetings (create, update, delete, fetch).
+reducers/:
+meetingReducer.js: Reducer for managing the state of meetings.
+rootReducer.js: Combines all the reducers into a single root reducer.
+store.js: Configures the Redux store, combining reducers and applying middleware.
+.env: Environment variables for configuration (e.g., API endpoints, keys).
+
+package.json
+Contains the dependencies and scripts for the frontend project, including React, React Router, Redux, and any other necessary libraries.
+
+README.md
+Documentation providing instructions for setting up and running the frontend application, along with any additional notes for developers.
+
+.gitignore
+Specifies files and directories to be ignored by Git (e.g., node_modules, .env).
+
+Improvements:
+State Management: Using Redux for state management ensures that the state of the application is managed efficiently and predictably.
+Modular Components: Keeping components modular and reusable improves maintainability and scalability.
+Theming: Using a dedicated colors.css file ensures a consistent color scheme across the application.
+Responsiveness: Ensure all components are responsive to work seamlessly on different devices and screen sizes.
+Accessibility: Make sure to follow accessibility best practices to make the application usable for all users.
 Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
