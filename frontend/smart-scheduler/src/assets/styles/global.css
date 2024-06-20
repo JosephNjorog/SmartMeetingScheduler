@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-grey-light);
+    color: var(--color-grey-dark);
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    color: var(--color-orange);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  button {
+    background-color: var(--color-grey-dark);
+    color: var(--color-white);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: var(--color-orange);
+  }
+  
