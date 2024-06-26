@@ -1,15 +1,21 @@
-// src/index.js
-
+require('dotenv').config();
 const express = require('express');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const connectDB = require('./config/db');
+const apiRoutes = require('./routes/api');
+
 const app = express();
-const port = 3000;
 
-// Define a simple route
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
+// Connect to database
+connectDB();
 
-// Start the server
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
-});
+// Middleware
+app.use(cors());
+app.use(bodyParser.json());
+
+// Routes
+app.use('/api', apiRoutes);
+
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
