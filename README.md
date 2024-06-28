@@ -1,4 +1,4 @@
-# SMART-MEETING SCHEDULER:clock:
+# SMART-MEETING SCHEDULER
 
 This is an application utilising AI (Open AI) to make the planning of meeting easier.
 
