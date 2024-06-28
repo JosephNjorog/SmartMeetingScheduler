@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import Calendar from '../Calendar';
-import MeetingForm from '../MeetingForm';
-import MeetingList from '../MeetingList';
-import Notification from '../Notification';
+import Calendar from '../components/Calendar';
+import MeetingForm from '../components/MeetingForm';
+import MeetingList from '../components/MeetingList';
+import Notification from '../components/Notification';
 import './Dashboard.css';
 
 const Dashboard = () => {

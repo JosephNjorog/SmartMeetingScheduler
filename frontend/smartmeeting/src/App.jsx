@@ -1,8 +1,8 @@
 // import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Dashboard from './components/pages/Dashboard';
-import Login from './components/pages/Login';
-import Register from './components/pages/Register';
+import Dashboard from './pages/Dashboard';
+import Login from './pages/Login';
+import Register from './pages/Register';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import './styles/colors.css';
