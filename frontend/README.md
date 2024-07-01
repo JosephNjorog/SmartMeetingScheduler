@@ -79,9 +79,9 @@ SmartMeetingScheduler/
 │   ├── package.json
 │   ├── vite.config.js
 ├── backend/ (your backend files go here)
-```
 
-### File Descriptions
+
+## File Descriptions
 
 #### Components
 
