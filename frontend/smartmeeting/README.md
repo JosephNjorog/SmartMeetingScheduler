@@ -179,7 +179,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-Thank you for using the Smart Meeting Scheduler! If you have any questions or need further assistance, feel free to contact us. Happy scheduling!
+Thank you for using the Smart Meeting Scheduler! If you have any questions or need further assistance, feel free to contact us. Happy scheduling And have fun!
 
             
             
